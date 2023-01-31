@@ -9,3 +9,19 @@ grep 'meow[a-z]*' kitty_ipsum_2.txt -o
 
 Lines they appear on:
 grep 'meow[a-z]*' kitty_ipsum_2.txt -n | sed 's/([0-9]+).*/\1/' -E
+
+
+To use std input:
+command < file
+
+To pipe
+file | command
+
+To output error
+command 1> stderror.txt
+
+To output stdoutput
+command > stdout.txt
+
+To append to file
+command >> file.txt
