@@ -1,0 +1,11 @@
+Word count from file:
+cat kitty_ipsum_2.txt | wc -w
+
+Number of characters
+cat kitty_ipsum_2.txt | wc -m
+
+Number of times a pattern appears:
+grep 'meow[a-z]*' kitty_ipsum_2.txt -o
+
+Lines they appear on:
+grep 'meow[a-z]*' kitty_ipsum_2.txt -n | sed 's/([0-9]+).*/\1/' -E
